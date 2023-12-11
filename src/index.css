@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(82, 58, 189) 0%, rgb(63, 184, 158) 100%);
+  color: aliceblue;
+}
+
+button {
+  background: rgb(79, 56, 180);
+  color: #FFF;
+  padding: 0 45px;
+  border: 2px solid #FFF;
+  border-radius: 25px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: .4s;
+}
+
+button:hover {
+  background-color: rgb(61, 43, 139);
+}
