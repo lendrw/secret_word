@@ -119,3 +119,33 @@
         line-height: 1.3;
     }
 }
+
+@media (max-width: 340px) {
+    .wordContainer {
+        padding: 0;
+        border: none;
+    }
+
+    .game h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .letter, 
+    .blankSquare {
+        font-size: 7.5vw;
+        line-height: 1.5;
+        height: 8.4vw;
+        width: 8.4vw;
+        line-height: 1.3;
+    }
+
+    .letterContainer input {
+        height: 40px;
+        width: 40px;
+        font-size: 2em;
+        text-align: center;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+}
