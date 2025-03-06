@@ -9,6 +9,7 @@
 .game h1 {
     font-size: 2.5em;
     margin: 0;
+    text-align: center;
 }
 
 .points span {
@@ -125,7 +126,7 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
     .wordContainer {
         padding: 0;
         border: none;
