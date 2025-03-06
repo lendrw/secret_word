@@ -148,4 +148,8 @@
         margin-right: 1em;
         border-radius: 10px;
     }
+
+    .letterContainer p {
+        font-size: 17px;
+    }
 }
