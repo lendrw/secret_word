@@ -1,5 +1,14 @@
+.game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .game h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
 .points span {
@@ -10,40 +19,103 @@
     color: #ecfa00;
 }
 
+.guesses {
+    font-size: 20px;
+}
+
 .wordContainer {
     margin: 1.5em;
-    padding: 1.5em;
-    border: 20px solid #ecfa00;
+    padding: 1em;
+    border: 15px solid #ecfa00;
     display: flex;
+}
+
+.wordContainer span {
+    text-align: center;
 }
 
 .letter, 
 .blankSquare {
-    font-size: 70px;
+    font-size: 4vw;
     line-height: 1.5;
     border: 3px solid #000;
-    height: 100px;
-    width: 100px;
+    height: 6vw;
+    width: 6vw;
     text-transform: uppercase;
     background-color: #FFF;
     color: #000;
     font-weight: bold;
+    border-radius: 10px;
 }
 
-.letter-container p {
+.letterContainer p {
     margin-bottom: 1.2em;
+    font-size: 20px;
 }
 
-.letter-container form {
+.letterContainer form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .letterContainer input {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+    border-radius: 10px;
+}
+
+.wrongLettersContainer p, .wrongLettersContainer span {
+    font-size: 20px;
+}
+
+.wrongLettersContainer span {
+    text-transform: uppercase;
+}
+
+@media (max-width: 780px) {
+    .letter, 
+    .blankSquare {
+        font-size: 6vw;
+        line-height: 1.4;
+        border: 1px solid #000;
+        height: 7vw;
+        width: 7vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .wordContainer {
+        margin: 1em;
+        padding: .5em;
+        border: 10px solid #ecfa00;
+    }
+
+    .letter, 
+    .blankSquare {
+        font-size: 6vw;
+        line-height: 1.5;
+        border: 1px solid #000;
+        height: 8vw;
+        width: 8vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .wordContainer {
+        padding: .3em;
+        border: 5px solid #ecfa00;
+    }
+
+    .letter, 
+    .blankSquare {
+        font-size: 7vw;
+        line-height: 1.5;
+        height: 8.1vw;
+        width: 8.1vw;
+        line-height: 1.3;
+    }
 }
