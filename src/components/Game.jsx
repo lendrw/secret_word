@@ -37,28 +37,28 @@ const Game = ({
       </h3>
       <p className="guesses">Você ainda tem {guesses} tentativa(s).</p>
       <div className="wordContainer">
-      {trueLetters.map((trueLetter, i) =>
-        guessedLetters.includes(letters[i]) ? (
-        <span key={i} className="letter">
-        {trueLetter}
-        </span>
-          ) : (
-        <span key={i} className="blankSquare"></span>
-          )
-        )}
+        {trueLetters.map((trueLetter, i) =>
+          guessedLetters.includes(letters[i]) ? (
+          <span key={i} className="letter">
+          {trueLetter}
+          </span>
+            ) : (
+          <span key={i} className="blankSquare"></span>
+            )
+          )}
       </div>
 
       <div className="letterContainer">
         <p>Tenete adivinhar uma letra da palavra:</p>
         <form onSubmit={handleSubmit}>
           <input 
-          type="text" 
-          name="letter" 
-          maxLength={1} 
-          required 
-          onChange={(e) => setLetter(e.target.value)}
-          value={letter}
-          ref={letterInputRef}
+            type="text" 
+            name="letter" 
+            maxLength={1} 
+            required 
+            onChange={(e) => setLetter(e.target.value.toLowerCase())}
+            value={letter}
+            ref={letterInputRef}
           />
           <button>Jogar!</button>
         </form>
