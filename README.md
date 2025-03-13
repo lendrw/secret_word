@@ -3,7 +3,7 @@
 Um jogo interativo , onde o jogador deve adivinhar a palavra antes de esgotar as tentativas. Desenvolvido com **React + Vite**, utilizando **JavaScript, HTML e CSS** para criar uma experiência dinâmica e responsiva.  
 
 ## 🚀 **Demonstração**  
-🔗 [Acesse o jogo aqui](https://lendrw.github.io/secret_word) *(se estiver hospedado no GitHub Pages)*  
+🔗 [Acesse o jogo aqui](https://lendrw.github.io/secret_word)  
 
 ## 🛠️ **Tecnologias Utilizadas**  
 - **HTML** → Estrutura do jogo  
